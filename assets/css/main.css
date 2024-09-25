@@ -1333,7 +1333,7 @@ p {
   display: flex;
 }
 .edogs-content p {
-  font-size: 22px;
+  font-size: 20px;
 }
 .edogs-section .edogs-content ul li {
   padding-left: 40px;
@@ -1479,9 +1479,19 @@ p {
   background-position: top right;
   padding-top: 220px;
   margin-top: 20px;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #FFDEDB;;
 }
 .footer .container {
   max-width: 750px;
+}
+.footer-description, .footer-support {
+  font-size: 16px;
 }
 
 
@@ -1489,7 +1499,7 @@ p {
 @media (max-width: 767px) {
   .footer {
     padding-top: 120px;
-    background: #FF6458;
+    background: #fcb7b7;
   }
 }
 
