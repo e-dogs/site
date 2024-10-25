@@ -608,12 +608,12 @@ p {
 }
 
 .sticky .navbar {
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .sticky .navbar {
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }
 
@@ -773,14 +773,15 @@ p {
   position: relative;
   z-index: 1;
   padding: 125px 0 175px;
-  background-image: url("../img/hero-bg.svg");
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: url("../img/tramp-train.webp") calc(50% - 300px) 100px/auto 70% no-repeat, url("../img/hero-bg.svg") top center no-repeat;
+}
+.hero-section .container {
 }
 
 @media (max-width: 767px) {
   .hero-section {
     padding-top: 130px;
+    padding-bottom: 50px;
   }
 }
 
@@ -789,6 +790,9 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .hero-section {
+    background: url("../img/tramp-train.webp") 10% 0/70% auto no-repeat, url("../img/hero-bg.svg") top center no-repeat;
+  }
   .hero-section .hero-content {
     margin-bottom: 0px;
   }
@@ -825,6 +829,9 @@ p {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-section {
+    background: url("../img/tramp-train.webp") 10% 0/90% auto no-repeat, url("../img/hero-bg.svg") top center no-repeat;
+  }
   .hero-section .hero-content h1 {
     font-size: 34px;
   }
@@ -834,6 +841,9 @@ p {
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    background: url("../img/tramp-train.webp") 0% 10%/100% auto no-repeat, url("../img/hero-bg.svg") top center no-repeat;
+  }
   .hero-section .hero-content h1 {
     font-size: 28px;
   }
@@ -897,6 +907,8 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-section .hero-img img {
+    
+    margin: 25px 0 75px 0;
     width: 100%;
   }
 }
@@ -1185,21 +1197,26 @@ p {
 .about-section .about-img {
   position: relative;
   z-index: 1;
-  padding: 75px 0;
+  padding: 50px 0;
+  text-align: center;
 }
 .about-img-main {
-  max-width: 600px;
-  max-height: 380px;
-  margin: 20px;
+  /*max-width: 600px;
+  max-height: 380px;*/
+  margin: 20px 0;
   border-radius: 20px;
 }
 .about-section.border-btn {
   background-color: #FFF;
 }
+.about-social a + a {
+  margin-left: 25px;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .about-section .about-img {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }
 
@@ -1250,19 +1267,23 @@ p {
   }
 }
 
+
+.about-img {
+  margin-right: 50px
+}
 .about-section .about-img-2 {
   position: relative;
   z-index: 1;
   padding: 75px 0 0;
   text-align: right;
 }
-.taylor-cat-img {
-  height: 450px;
+.game-img {
+  height: 600px;
   max-height: 450px;
-  margin-right: 150px;
+  max-height: 70vh;
 }
 .edogs-img {
-  height: 500px;
+  /*height: 500px;*/
   max-height: 500px;
   margin-right: 0;
 }
@@ -1270,15 +1291,19 @@ p {
   padding-bottom: 20px;
 }
 .edogs-img2 {
-  height: 500px;
+  /*height: 500px;*/
   max-height: 500px;
   margin: 20px;
   margin-left: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .edogs-section  {
+    padding-top: 50px !important;
+  }
   .about-section .about-img-2 {
     margin-bottom: 70px;
+    text-align: center;
   }
 }
 
@@ -1334,6 +1359,7 @@ p {
 }
 .edogs-content p {
   font-size: 20px;
+  word-break: break-all;
 }
 .edogs-section .edogs-content ul li {
   padding-left: 40px;
@@ -1383,12 +1409,6 @@ p {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .buy-section .buy-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
 
 .buy-section a {
   color: #FFF;
@@ -1452,7 +1472,22 @@ p {
   border-radius: 18px;
 }
 
+@media only screen and (max-width: 991px) {
+  .buy-section .buy-wrapper {
+    padding: 30px 40px 25px;
+  }
+  .buy-section .buy-wrapper h3 {
+    text-align: center;
+  }
+  .buy-wrapper-icon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 767px) {
+  .buy-section .buy-wrapper {
+    padding: 25px 25px 10px ;
+  }
   .buy-section .buy-wrapper .subscribe-form button {
     position: static;
     margin-top: 20px;
@@ -1498,9 +1533,13 @@ p {
 
 @media (max-width: 767px) {
   .footer {
-    padding-top: 120px;
-    background: #fcb7b7;
+    padding-top: 20px;
+    background: #eb0510;
   }
+}
+
+.mr-5 {
+  margin-right: 5px;
 }
 
 .mt-5 {
